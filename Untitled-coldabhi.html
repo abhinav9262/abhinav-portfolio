@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #000;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #00bcd4;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .hero h1 span {
+            color: #00bcd4;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+
+        .profile-pic {
+            margin-top: 30px;
+        }
+
+        .profile-pic img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #00bcd4;
+        }
+
+        .social-icons {
+            position: fixed;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #00bcd4;
+        }
+
+        .chat-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #00bcd4;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+        }
+
+        .chat-icon:hover {
+            background-color: #00a0b0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Abhinav Ashish™</div>
+        <div class="nav-links">
+            <a href="home.html" target="_blank">Home</a>
+            <a href="skills.html" target="_blank">Skills</a>
+            <a href="projects.html" target="_blank">Projects</a>
+            <a href="blogs.html" target="_blank">Blogs</a>
+            <a href="my-journey.html" target="_blank">My Journey</a>
+            <a href="apps.html" target="_blank">Apps</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Hi<br>I'm <span>Abhinav Ashish</span></h1>
+        <h2>a Web Developer</h2>
+        <div class="profile-pic">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture">
+        </div>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://www.instagram.com/your-instagram-username/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" width="30">
+        </a>
+        <a href="https://twitter.com/your-twitter-username/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="30">
+        </a>
+        <a href="https://www.linkedin.com/in/abhinav-rocky-b66060244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
+        </a>
+        <a href="https://github.com/your-github-username/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="30">
+        </a>
+    </div>
+
+    <a href="#" class="chat-icon">We Are Here!</a>
+</body>
+</html>
